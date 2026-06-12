@@ -22,7 +22,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 }
 
 dependencies {
-    // Media3 for AudioSessionId (used in VisualizerHelper?) Let me check VisualizerHelper if it needs Media3
-    // Wait, VisualizerHelper takes audioSessionId as Int. It uses android.media.audiofx.Visualizer which is standard Android SDK.
-    // So no external dependencies needed!
+    implementation(libs.math3)
+    implementation(libs.timber)
 }

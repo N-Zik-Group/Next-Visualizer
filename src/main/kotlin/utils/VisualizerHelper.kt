@@ -23,7 +23,7 @@ class VisualizerHelper(val sessionId: Int) {
                 sharedVisualizers[sessionId] = v
                 v
             } catch (e: Exception) {
-                e.printStackTrace()
+                Timber.e(e, "VisualizerHelper: Failed to get shared visualizer")
                 null
             }
         }

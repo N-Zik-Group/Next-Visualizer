@@ -3,11 +3,12 @@ package utils
 import android.media.audiofx.Visualizer
 import android.os.Handler
 import timber.log.Timber
+import java.util.concurrent.ConcurrentHashMap
 
 class VisualizerHelper(val sessionId: Int) {
 
     companion object {
-        private val sharedVisualizers = java.util.concurrent.ConcurrentHashMap<Int, Visualizer>()
+        private val sharedVisualizers = ConcurrentHashMap<Int, Visualizer>()
 
         @Synchronized
         fun getSharedVisualizer(sessionId: Int): Visualizer? {

@@ -7,6 +7,7 @@ import android.graphics.Path
 import painters.Painter
 import utils.VisualizerHelper
 import org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction
+import kotlin.math.PI
 
 class FlatWave(
     val colorPaint: Int = Color.WHITE,
@@ -63,7 +64,7 @@ class FlatWave(
             val x = (progress * num).coerceIn(0.0, num.toDouble())
             
             // We use cosine to smoothly alternate the sign of the wave between positive and negative
-            val alternatingSign = kotlin.math.cos(progress * num * kotlin.math.PI).toFloat()
+            val alternatingSign = kotlin.math.cos(progress * num * PI).toFloat()
             
             // The amplitude is defined completely by the music (psf.value(x))
             val value = psf.value(x).toFloat() * alternatingSign

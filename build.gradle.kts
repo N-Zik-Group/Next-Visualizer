@@ -5,7 +5,7 @@ plugins {
 
 configure<com.android.build.api.dsl.LibraryExtension> {
     namespace = "nextvisualizer"
-    compileSdk = 35 // Assuming 35 based on typical recent Android setup, N-Zik root uses 35 probably. Wait, discordrpc used 37! I will use 35, or I can check root build.gradle.kts. But 35 is safe.
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 24

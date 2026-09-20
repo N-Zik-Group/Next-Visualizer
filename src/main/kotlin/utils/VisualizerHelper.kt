@@ -1,7 +1,6 @@
 package utils
 
 import android.media.audiofx.Visualizer
-import android.os.Handler
 import org.jetbrains.annotations.VisibleForTesting
 import timber.log.Timber
 import java.util.concurrent.ConcurrentHashMap
@@ -134,8 +133,6 @@ class VisualizerHelper(val sessionId: Int) {
     private val waveBuff: ByteArray = ByteArray(Visualizer.getCaptureSizeRange()[1])
     private val fftMF: FloatArray = FloatArray(fftBuff.size / 2 - 1)
     private val fftM: DoubleArray = DoubleArray(fftBuff.size / 2 - 1)
-    private lateinit var handler: Handler
-    private lateinit var runnable: Runnable
 
     fun getFft(): ByteArray {
         val snapshot = snapshotProvider(sessionId)
@@ -216,28 +213,6 @@ class VisualizerHelper(val sessionId: Int) {
      */
     fun hzToFftIndex(Hz: Int): Int {
         return Math.min(Math.max(Hz * 1024 / (44100 * 2), 0), 255)
-    }
-
-    /**
-     * Log WfmAnalog and Fft values every 1s
-     */
-//    fun startDebug() {
-//        handler = Handler()
-//        runnable = object : Runnable {
-//            override fun run() {
-//                Timber.tag("WfmAnalog").d(getWave().contentToString())
-//                Timber.tag("Fft").d(getFftMagnitude().contentToString())
-//                handler.postDelayed(this, 1000)
-//            }
-//        }
-//        handler.post(runnable)
-//    }
-
-    /**
-     * Stop logging
-     */
-    fun stopDebug() {
-        handler.removeCallbacks(runnable)
     }
 
     /**

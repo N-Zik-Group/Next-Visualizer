@@ -5,6 +5,8 @@ NextVisualizer is an audio visualizer library extracted from the N-Zik project. 
 > **Note:** This project is a fork of the Next Visualizer implementation originally created by **[jeffshee](https://github.com/jeffshee/NextGenVisualizer)**. 
 
 
+[![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/Next-Visualizer?color=blue)](https://www.gnu.org/licenses/gpl-3.0) [![CodeFactor](https://www.codefactor.io/repository/github/n-zik-group/next-visualizer/badge)](https://www.codefactor.io/repository/github/n-zik-group/next-visualizer)
+
 ## Features
 - **FFT Painters**: Analog, Bar, Circle Bar, Line, Polygon, Wave, etc.
 - **Modifiers**: Beat, Blend, Compose, Glitch, Move, Rotate, Scale, Shake, Zoom.

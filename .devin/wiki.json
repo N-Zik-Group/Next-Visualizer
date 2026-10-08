@@ -1,0 +1,98 @@
+{
+  "repo_notes": [
+    "NextVisualizer is an Android audio visualizer library (Kotlin) extracted from the N-Zik project.",
+    "Used as a Gradle module (':nextvisualizer') in N-Zik (see N-Zik-Group/N-Zik settings.gradle.kts).",
+    "Fork of the Next Visualizer implementation originally created by jeffshee (NextGenVisualizer).",
+    "Source is grouped by feature directly under src/main/kotlin/: 'painters/' (fft, waveform, modifier, misc), 'utils/' (VisualizerHelper, FrameManager, Preset), 'views/' (VisualizerView) and 'enums/'.",
+    "Rendering happens on a canvas: VisualizerView drives the frame loop, painters draw FFT/waveform effects, modifiers transform the output.",
+    "Dependencies: Android SDK 35+, Apache Commons Math3 (FFT), Timber (logging).",
+    "Tone: technical library documentation; explain painter/modifier concepts with concrete usage examples."
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "page_notes": [
+        {
+          "content": "Introduction: what the library renders, where it is used (N-Zik), and its relationship to the NextGenVisualizer fork."
+        }
+      ]
+    },
+    {
+      "title": "Architecture",
+      "page_notes": [
+        {
+          "content": "Canvas rendering pipeline: VisualizerView, the frame loop (FrameManager), and how painters are composed per frame."
+        }
+      ]
+    },
+    {
+      "title": "FFT Painters",
+      "parent": "Architecture",
+      "page_notes": [
+        {
+          "content": "FFT-based painters under painters/fft: FftAnalog, FftBar, FftCBar, FftLine, FftCLine, FftPoly, FftCPoly, FftWave, FftCWave, FftWaveRgb, FftCWaveRgb, FlatWave."
+        }
+      ]
+    },
+    {
+      "title": "Waveform Painters",
+      "parent": "Architecture",
+      "page_notes": [
+        {
+          "content": "Time-domain waveform rendering under painters/waveform (WfmAnalog) vs the FFT-based effects."
+        }
+      ]
+    },
+    {
+      "title": "Modifiers",
+      "parent": "Architecture",
+      "page_notes": [
+        {
+          "content": "Modifiers under painters/modifier: Beat, Blend, Compose, Glitch, Move, Rotate, Scale, Shake, Zoom - how they wrap/transform a base painter."
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous Painters",
+      "parent": "Architecture",
+      "page_notes": [
+        {
+          "content": "Background, Gradient, SimpleText and Icon rendering under painters/misc."
+        }
+      ]
+    },
+    {
+      "title": "Audio Capture",
+      "parent": "Architecture",
+      "page_notes": [
+        {
+          "content": "How FFT and waveform captures are read (snapshot seam) and consumed by the painters via VisualizerHelper."
+        }
+      ]
+    },
+    {
+      "title": "Presets",
+      "page_notes": [
+        {
+          "content": "Preset.kt: predefined painter/modifier combinations and how to switch between them."
+        }
+      ]
+    },
+    {
+      "title": "Integration",
+      "page_notes": [
+        {
+          "content": "Adding the library as a Gradle submodule in Android projects (':nextvisualizer')."
+        }
+      ]
+    },
+    {
+      "title": "Requirements",
+      "page_notes": [
+        {
+          "content": "Android SDK 35+, Apache Commons Math3, Timber (for logging)."
+        }
+      ]
+    }
+  ]
+}

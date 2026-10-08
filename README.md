@@ -15,8 +15,10 @@
 <br>
 
 <div align="center">
+  
   [![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/Next-Visualizer?color=blue)](https://www.gnu.org/licenses/gpl-3.0)
   [![CodeFactor](https://www.codefactor.io/repository/github/n-zik-group/next-visualizer/badge)](https://www.codefactor.io/repository/github/n-zik-group/next-visualizer)
+  
 </div>
 
 <div align="center">

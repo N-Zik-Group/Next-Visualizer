@@ -1,0 +1,14 @@
+# Standalone version catalog (root project = this repository).
+# Mirrors the versions used by the N-Zik app so the module builds identically
+# standalone (CI / CodeQL) and as a submodule inside N-Zik (where N-Zik's own
+# gradle/libs.versions.toml is used instead of this file).
+
+[versions]
+agp = "9.4.1"
+kotlin = "2.4.20"
+math3 = "3.6.1"
+timber = "5.0.1"
+
+[libraries]
+math3 = { group = "org.apache.commons", name = "commons-math3", version.ref = "math3" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }

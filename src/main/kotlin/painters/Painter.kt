@@ -32,20 +32,12 @@ abstract class Painter {
     abstract fun draw(canvas: Canvas, helper: VisualizerHelper)
 
     /**
-     * Interpolate FFT spectrum
+     * Interpolate FFT spectrum. Android don't capture a high resolution spectrum (only ~10 FFT values,
+     * vs e.g. 64 bands), so the values are interpolated to fit the adjustable number of bands.
      *
-     * Android don't capture a high resolution spectrum, and we want the number of bands be adjustable,
-     * so we do an interpolation here.
-     *
-     * (For example, to show 64 bands at frequencies from 0Hz to 1200Hz, Android only return ~10 FFT values.
-     * So we need to interpolate those ~10 values into 64 values in order to fit it into our bands)
-     *
-     * @param gravityModels Array of gravityModel
-     * @param sliceNum Number of Slice
-     * @param interpolator Which interpolator to use, `li` for Linear, `sp` for Spline
-     *
-     * @return a `PolynomialSplineFunction` (psf). To get the value, use
-     * `psf.value(x)`, where `x` must be a Double value from 0 to `num`
+     * @param gravityModels Array of gravityModel; `sliceNum` is the number of slices
+     * @param interpolator `li`/`linear` for Linear, `sp`/`spline` for Spline
+     * @return a `PolynomialSplineFunction` (psf); use `psf.value(x)`, where `x` must be a Double value from 0 to `num`
      */
     fun interpolateFft(
         gravityModels: Array<GravityModel>, sliceNum: Int, interpolator: String
@@ -64,16 +56,12 @@ abstract class Painter {
     }
 
     /**
-     * Interpolate FFT spectrum (Circle)
+     * Interpolate FFT spectrum (Circle). Similar to `interpolateFft()`, however this is
+     * meant for Fft from `getCircleFft()`.
      *
-     * Similar to `interpolateFft()`. However this is meant for Fft from `getCircleFft()`
-     *
-     * @param gravityModels Array of gravityModel
-     * @param sliceNum Number of Slice
-     * @param interpolator Which interpolator to use, `li` for Linear, `sp` for Spline
-     *
-     * @return a `PolynomialSplineFunction` (psf). To get the value, use
-     * `psf.value(x)`, where `x` must be a Double value from 0 to `num`
+     * @param gravityModels Array of gravityModel; `sliceNum` is the number of slices
+     * @param interpolator `li`/`linear` for Linear, `sp`/`spline` for Spline
+     * @return a `PolynomialSplineFunction` (psf); use `psf.value(x)`, where `x` must be a Double value from 0 to `num`
      */
     fun interpolateFftCircle(
         gravityModels: Array<GravityModel>, sliceNum: Int, interpolator: String
@@ -209,11 +197,11 @@ abstract class Painter {
     }
 
     /**
-     * A helper to Rotate the canvas, use `Rotate` painter instead if you want to rotate the entire painter(s)
-     * @param canvas Canvas
+     * A helper to Rotate the canvas; use the `Rotate` painter instead if you want to
+     * rotate the entire painter(s).
+     *
      * @param rot Rotation in degree
-     * @param xR Rotation point X, 1f = `canvas.width`
-     * @param yR Rotation point Y, 1f = `canvas.height`
+     * @param xR Rotation point X, 1f = `canvas.width` (`yR`: point Y, 1f = `canvas.height`)
      * @param d Drawing operation here
      */
     fun rotateHelper(canvas: Canvas, rot: Float, xR: Float, yR: Float, d: () -> Unit) {
@@ -224,11 +212,10 @@ abstract class Painter {
     }
 
     /**
-     * A helper to Translate the canvas and to provide Side functionality
-     * @param canvas Canvas
+     * A helper to Translate the canvas and to provide Side functionality.
+     *
      * @param side `a` `b` `ab` generally means Up(or Out), Down(or In), Both
-     * @param xR Rotation point X, 1f = `canvas.width`
-     * @param yR Rotation point Y, 1f = `canvas.height`
+     * @param xR Rotation point X, 1f = `canvas.width` (`yR`: point Y, 1f = `canvas.height`)
      * @param d Drawing operation for side a here
      */
     fun drawHelper(canvas: Canvas, side: String, xR: Float, yR: Float, d: () -> Unit) {
@@ -254,13 +241,11 @@ abstract class Painter {
     }
 
     /**
-     * A helper to Translate the canvas and to provide Side functionality
-     * @param canvas Canvas
+     * A helper to Translate the canvas and to provide Side functionality.
+     *
      * @param side `a` `b` `ab` generally means Up(or Out), Down(or In), Both
-     * @param xR Rotation point X, 1f = `canvas.width`
-     * @param yR Rotation point Y, 1f = `canvas.height`
-     * @param d Drawing operation for side a here
-     * @param dab Drawing operation for side ab here
+     * @param xR Rotation point X, 1f = `canvas.width` (`yR`: point Y, 1f = `canvas.height`)
+     * @param d Drawing operation for side a here; `dab` is the one for side ab
      */
     fun drawHelper(canvas: Canvas, side: String, xR: Float, yR: Float, d: () -> Unit, dab: () -> Unit) {
         canvas.save()
@@ -283,14 +268,11 @@ abstract class Painter {
     }
 
     /**
-     * A helper to Translate the canvas and to provide Side functionality
-     * @param canvas Canvas
+     * A helper to Translate the canvas and to provide Side functionality.
+     *
      * @param side `a` `b` `ab` generally means Up(or Out), Down(or In), Both
-     * @param xR Rotation point X, 1f = `canvas.width`
-     * @param yR Rotation point Y, 1f = `canvas.height`
-     * @param da Drawing operation for side a here
-     * @param db Drawing operation for side b here
-     * @param dab Drawing operation for side ab here
+     * @param xR Rotation point X, 1f = `canvas.width` (`yR`: point Y, 1f = `canvas.height`)
+     * @param da op for side a; `db` for side b; `dab` for side ab
      */
     fun drawHelper(
         canvas: Canvas, side: String, xR: Float, yR: Float, da: () -> Unit, db: () -> Unit, dab: () -> Unit

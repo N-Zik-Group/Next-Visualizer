@@ -18,8 +18,8 @@
 
 <div align="center">
   
-  [![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/Next-Visualizer?color=blue)](https://www.gnu.org/licenses/gpl-3.0)
-  [![CodeFactor](https://www.codefactor.io/repository/github/n-zik-group/next-visualizer/badge)](https://www.codefactor.io/repository/github/n-zik-group/next-visualizer)
+  [![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/Next-Visualizer?style=flat&color=blue)](https://www.gnu.org/licenses/gpl-3.0)
+  [![CodeFactor](https://img.shields.io/codefactor/grade/github/N-Zik-Group/Next-Visualizer?style=flat&label=CodeFactor)](https://www.codefactor.io/repository/github/n-zik-group/next-visualizer)
   
 </div>
 
@@ -27,7 +27,7 @@
 
 ## 📚 Wiki
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/N-Zik-Group/Next-Visualizer)
+[![Ask DeepWiki](https://img.shields.io/badge/Ask-DeepWiki-8d5cff?style=flat)](https://deepwiki.com/N-Zik-Group/Next-Visualizer)
 
 <br>
 
@@ -79,7 +79,7 @@ The source files are placed directly under `src/main/kotlin/` grouped by their f
 Pull requests are welcome!
 Feel free to fix bugs, enhance features, or suggest new ideas.
 
-# 📦 Clone the repo
+# 📜 Clone the repo
 
 Use this command to clone the repo
 

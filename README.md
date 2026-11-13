@@ -87,7 +87,7 @@ Use this command to clone the repo
 git clone https://github.com/N-Zik-Group/Next-Visualizer.git
 ```
 
-## Credits
+# 🎖️ Credits
 
 See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md#android-extension-modules).
 

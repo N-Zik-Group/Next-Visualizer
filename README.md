@@ -89,6 +89,8 @@ git clone https://github.com/N-Zik-Group/Next-Visualizer.git
 
 # 👀 Status
 
+[![Refresh contributor grids](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/readme-contributors.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/readme-contributors.yml)
+
 [![CodeQL](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml)  
 [![Dependabot Updates](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependabot/dependabot-updates)  
 [![Automatic Dependency Submission](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependency-graph/auto-submission)  
@@ -96,7 +98,11 @@ git clone https://github.com/N-Zik-Group/Next-Visualizer.git
 
 # 👥 Contributors
 
-[![GitHub contributors](https://contrib.rocks/image?repo=N-Zik-Group/Next-Visualizer)](https://github.com/N-Zik-Group/Next-Visualizer/graphs/contributors)
+<!-- project-contributors:start -->
+<p align="center">
+<a href="https://github.com/NEVARLeVrai"><img src="https://avatars.githubusercontent.com/u/63956787?v=4" width="54" height="54" alt="NEVARLeVrai" title="NEVARLeVrai" /></a>
+</p>
+<!-- project-contributors:end -->
 
 # 🎖️ Credits
 

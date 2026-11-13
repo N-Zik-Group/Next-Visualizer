@@ -87,11 +87,9 @@ Use this command to clone the repo
 git clone https://github.com/N-Zik-Group/Next-Visualizer.git
 ```
 
-# 🫂 Acknowledgements
+## Credits
 
-### 🛠 Based on / Inspired by:
-
-- [**NextGenVisualizer**](https://github.com/jeffshee/NextGenVisualizer): The Next Visualizer implementation this project is based on.
+See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md#android-extension-modules).
 
 Made with ❤️ by [NEVARLeVrai](https://github.com/NEVARLeVrai)
 Licensed under GPLv3 - see [LICENSE](LICENSE)

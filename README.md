@@ -87,6 +87,10 @@ Use this command to clone the repo
 git clone https://github.com/N-Zik-Group/Next-Visualizer.git
 ```
 
+# 👀 Status
+
+[![CodeQL](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml)
+
 # 👥 Contributors
 
 [![GitHub contributors](https://contrib.rocks/image?repo=N-Zik-Group/Next-Visualizer)](https://github.com/N-Zik-Group/Next-Visualizer/graphs/contributors)

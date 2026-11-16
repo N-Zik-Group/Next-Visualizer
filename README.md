@@ -103,3 +103,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, verification and pull requests
 See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md#android-extension-modules).
 
 Made with ❤️ by the N-Zik Group community · Licensed under Apache 2.0 - see [LICENSE](LICENSE)
+
+<!-- Temporary roadmap integration test. -->

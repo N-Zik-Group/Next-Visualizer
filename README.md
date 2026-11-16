@@ -20,6 +20,7 @@
   
   [![License: Apache 2.0](https://img.shields.io/github/license/N-Zik-Group/Next-Visualizer?style=flat&color=blue)](https://www.apache.org/licenses/LICENSE-2.0)
   [![CodeFactor](https://img.shields.io/codefactor/grade/github/N-Zik-Group/Next-Visualizer?style=flat&label=CodeFactor)](https://www.codefactor.io/repository/github/n-zik-group/next-visualizer)
+[![GitHub Code Quality](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/github-code-quality/codeql/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/github-code-quality/codeql)
   
 </div>
 
@@ -80,11 +81,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, verification and pull requests
 
 [![N-Zik Roadmap](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/mobile-roadmap.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/mobile-roadmap.yml)
 
+[![Roadmap Reconciliation](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/roadmap-reconcile.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/roadmap-reconcile.yml)
+
 [N-Zik roadmap](https://github.com/orgs/N-Zik-Group/projects/1)
 
 [![Refresh contributor grids](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/readme-contributors.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/readme-contributors.yml)
 
-[![Dependabot Updates](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependabot/dependabot-updates)  
 [![Automatic Dependency Submission](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependency-graph/auto-submission)  
 [![CodeQL](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml)
 

@@ -84,7 +84,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, verification and pull requests
 
 [![Refresh contributor grids](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/readme-contributors.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/readme-contributors.yml)
 
-[![CodeQL](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml)  
 [![Dependabot Updates](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependabot/dependabot-updates)  
 [![Automatic Dependency Submission](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/dependency-graph/auto-submission)  
 [![CodeQL](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml/badge.svg)](https://github.com/N-Zik-Group/Next-Visualizer/actions/workflows/codeql.yml)
